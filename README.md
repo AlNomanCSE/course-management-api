@@ -70,6 +70,17 @@ A Course Management API using Node.js, Express.js, and MongoDB. This API will al
 ## API Endpoints
 All endpoints return JSON responses. Use `Authorization: Bearer <token>` for protected routes after logging in.
 
+- **POST /api/auth/register**: Register user.
+- **POST /api/auth/login**: Login user.
+- **POST /api/auth/refresh**: Refresh access token.
+- **POST /api/auth/logout**: Logout user.
+- **GET /api/courses**: Get all courses.
+- **GET /api/courses/:id**: Get single course.
+- **POST /api/courses**: Create course (admin).
+- **DELETE /api/courses/:id**: Delete course (admin).
+- **POST /api/purchases**: Purchase course.
+- **GET /api/purchases**: Get my purchases.
+
 ### Authentication Endpoints
 - **POST /api/auth/register**
   - **Description**: Register a new user.
